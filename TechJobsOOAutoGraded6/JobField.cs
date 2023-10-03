@@ -1,36 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace TechJobsOOAutoGraded6
 {
-    public class PositionType : JobField
+    public abstract class JobField
     {
-        public PositionType(string value) : base(value)
-        {
-
-        }
-    }
-    /*
-    public class PositionType
-	{
         public int Id { get; }
         private static int nextId = 1;
         public string Value { get; set; }
-
-        public PositionType()
+        public JobField()
         {
             Id = nextId;
             nextId++;
         }
-
-        public PositionType(string value) : this()
+        public JobField(string value) : this()
         {
             Value = value;
         }
-
-        // TODO: Task 2: Add custom Equals(), GetHashCode(), and ToString() methods.
         public override bool Equals(object obj)
         {
-            return obj is PositionType position &&
-                   Id == position.Id;
+            return obj is JobField jobField &&
+                   Id == jobField.Id;
         }
 
         public override int GetHashCode()
@@ -42,7 +35,6 @@ namespace TechJobsOOAutoGraded6
         {
             return Value;
         }
-    }
-    */
-}
 
+    }
+}
