@@ -33,6 +33,9 @@ namespace TechJobsOOAutoGraded6
 
         public override string ToString()
         {
+            if (string.IsNullOrEmpty(Value))
+                return "No such value";
+            else
             return Value;
         }
 

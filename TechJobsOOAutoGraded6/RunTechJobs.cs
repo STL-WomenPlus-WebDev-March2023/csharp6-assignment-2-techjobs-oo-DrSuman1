@@ -21,11 +21,12 @@ namespace TechJobsOOAutoGraded6
 
                 foreach (Job job in jobs)
                 {
-                    Console.WriteLine("ID: "+ job.Id);
-                Console.WriteLine("Name: "+job.Name );
+                //Console.WriteLine(job);
+                Console.WriteLine("ID: " + job.Id);
+                Console.WriteLine("Name: " + job.Name);
                 Console.WriteLine("Employer: " + job.EmployerName);
                 Console.WriteLine("Location: " + job.EmployerLocation);
-                Console.WriteLine("Position: " + job.JobType);
+                Console.WriteLine("Position Type: " + job.JobType);
                 Console.WriteLine("Core Competency: " + job.JobCoreCompetency + Environment.NewLine);
             }
 
